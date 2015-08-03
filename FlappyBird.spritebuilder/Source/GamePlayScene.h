@@ -9,8 +9,7 @@
 #import "CCNode.h"
 #import "Character.h"
 
-Character*     character;
-CCPhysicsNode* physicsNode;
+
 
 typedef NS_ENUM(NSInteger, DrawingOrder) {
     DrawingOrderPipes,
@@ -21,6 +20,8 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 @interface GamePlayScene : CCNode <CCPhysicsCollisionDelegate>
 {
     // define variables here;
+    Character*     character;
+    CCPhysicsNode* physicsNode;
 }
 
 -(void) initialize;
